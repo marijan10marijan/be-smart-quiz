@@ -1,0 +1,125 @@
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+body{
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(to bottom right, rgb(94, 94, 94), rgb(70, 69, 69));
+  color: white;
+}
+.quiz{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quiz__container{
+  width: min(760px, 90%);
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  align-items: center;
+}
+.quiz__button{
+  background: linear-gradient(orange, orangered);
+  padding: .7rem 1.4rem;
+  border: 1px solid transparent;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: 1.1rem;
+}
+.quiz__title{
+  font-size: 2.3rem;
+  color: rgb(216, 212, 245);
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-block-end: .2rem;
+}
+
+.quiz__text{
+  margin-block-end: .5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.quiz__text span{
+  font-size: 2rem;
+}
+
+.loading{
+  text-transform: uppercase;
+  margin-block-end: .5rem;
+}
+.loading__emoji{
+  font-size: 2rem;
+  color: orangered;
+}
+
+.quiz__card{
+  background-color: white;
+  border-radius: 5px;
+  padding: 1.5rem 1rem;
+  color: black;
+  text-align: center;
+}
+.show-current__question{
+  margin-block-end: 1rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.show-current__question span{
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-inline-start: .5rem ;
+}
+
+.quiz__answers{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: .5rem;
+  margin-block-end: 1rem;
+}
+
+.quiz__answers .button{
+  background-color: rgb(26, 171, 219);
+  padding-block: .5rem;
+  border-radius: 5px;
+  color: white;
+  font-weight: 700;
+  font-size: 1;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.question__title{
+  font-size: 1.8rem;
+  margin-block-end: 1.2rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.score{
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-block-end: .5rem;
+}
