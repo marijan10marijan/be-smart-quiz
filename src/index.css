@@ -104,6 +104,7 @@ body{
 .quiz__answers .button{
   background-color: rgb(26, 171, 219);
   padding-block: .5rem;
+  padding-inline: 1rem;
   border-radius: 5px;
   color: white;
   font-weight: 700;
@@ -122,4 +123,30 @@ body{
   font-size: 1.3rem;
   font-weight: bold;
   margin-block-end: .5rem;
+}
+
+
+@media (max-width:576px){
+  .quiz__card{
+    padding-inline: .5rem;
+  }
+  .question__title{
+    line-height: 1.1;
+    font-size: 1.4rem;
+    margin-block-end: 1rem;
+  }
+  .quiz__answers .button{
+    padding-inline: .4rem;
+  }
+  .quiz__button{
+    padding: .5rem 1rem;
+  }
+  .quiz__text{
+    font-size: 1rem;
+    text-align: center;
+  }
+  .quiz__text span{
+    font-size: 1.5rem;
+  }
+  
 }

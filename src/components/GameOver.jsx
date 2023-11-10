@@ -11,7 +11,7 @@ const GameOver = ({score, setScore, questions, setCurrentQuestion, setGameStarte
   return (
     <div  className="quiz__container">
         <h2 className="quiz__title">Game Over</h2>
-        <p className="quiz__text">I hope you are enjoy playing this quiz. 👍</p>
+        <p className="quiz__text">I hope you are enjoy playing this quiz. <span>👍</span></p>
         <p className="score">Your score is: {score} / {questions.length }</p>
         <button className="quiz__button" onClick={handlePlayAgain}>Play Again</button>
     </div>
