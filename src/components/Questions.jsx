@@ -35,7 +35,7 @@ const Questions = ({questions, setGameStarted}) => {
                                 />
                             ))}
                         </div>
-                        <button className="quiz__button" disabled={isBtnDisabled} onClick={nextQuestion}>Next Question</button>
+                        <button className={isBtnDisabled ? 'quiz__button disabled' : 'quiz__button'} disabled={isBtnDisabled} onClick={nextQuestion}>Next Question</button>
                     </div>
                 ) : null}
             </React.Fragment>
